@@ -1,0 +1,57 @@
+body {
+  font-family: Tahoma, sans-serif;
+  direction: rtl;
+  margin: 0;
+  background: #f7f7f9;
+  color: #222;
+}
+.container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+
+header { background: #333; color: #fff; padding: 12px 0; margin-bottom: 16px; }
+nav a {
+  color: #fff; margin: 0 8px; text-decoration: none; padding: 6px 8px; border-radius: 6px;
+}
+nav a.active, nav a:hover { background: #444; }
+.badge { background: #e91e63; color: #fff; padding: 2px 6px; border-radius: 10px; font-size: 12px; }
+
+.hero { background: #eef2ff; padding: 40px 20px; border: 1px solid #dde3ff; border-radius: 10px; text-align: center; }
+
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.product {
+  background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 10px; text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.product img { max-width: 100%; border-radius: 8px; }
+
+.btn { display: inline-block; background: #333; color: #fff; padding: 8px 14px; text-decoration: none; border: none; border-radius: 8px; cursor: pointer; }
+.btn:hover { background: #555; }
+.btn.danger { background: #c62828; }
+.btn.danger:hover { background: #b71c1c; }
+
+.filters { display: flex; gap: 8px; margin-bottom: 12px; }
+.filters input, .filters select { padding: 8px; border: 1px solid #ccc; border-radius: 8px; width: 200px; }
+
+.cart-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; }
+.cart-table th, .cart-table td { border: 1px solid #eee; padding: 10px; text-align: center; }
+.cart-summary { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
+
+.form-box {
+  display: flex; flex-direction: column; max-width: 420px; margin: 16px auto;
+  background: #fff; padding: 16px; border: 1px solid #ddd; border-radius: 10px;
+}
+.form-box input, .form-box textarea { margin: 8px 0; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+.form-msg { margin-top: 8px; font-size: 14px; color: #2e7d32; }
+
+.product-detail {
+  background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 16px;
+  display: grid; grid-template-columns: 320px 1fr; gap: 16px;
+}
+.product-detail img { width: 100%; border-radius: 10px; }
+
+.order-box {
+  background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 12px; margin-bottom: 12px;
+}
+
+footer { margin-top: 24px; padding: 16px 0; text-align: center; color: #555; border-top: 1px solid #e6e6e6; }
+
+@media (max-width: 768px) { .product-detail { grid-template-columns: 1fr; } }

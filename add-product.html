@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>افزودن محصول جدید | رام</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="container">
+    <h1>رام</h1>
+    <nav>
+      <a href="index.html">خانه</a>
+      <a href="products.html">محصولات</a>
+      <a href="cart.html">سبد خرید</a>
+      <a href="orders.html">ارسالی‌ها</a>
+      <a href="add-product.html" class="active">افزودن محصول</a>
+      <a href="profile.html">پروفایل</a>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h2>افزودن محصول جدید</h2>
+    <form id="addProductForm" class="form-box" onsubmit="return handleAddProduct(event)">
+      <label>نام محصول:</label>
+      <input id="newProductName" type="text" required>
+      <label>قیمت:</label>
+      <input id="newProductPrice" type="number" required>
+      <label>تصویر (لینک):</label>
+      <input id="newProductImg" type="text" placeholder="https://example.com/img.jpg" required>
+      <label>توضیحات:</label>
+      <textarea id="newProductDesc" required></textarea>
+      <button type="submit" class="btn">افزودن</button>
+      <p id="addProductMsg" class="form-msg"></p>
+    </form>
+  </section>
+
+  <footer class="container">
+    <p>© 2025 فروشگاه رام</p>
+  </footer>
+</body>
+</html>

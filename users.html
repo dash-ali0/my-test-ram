@@ -2,16 +2,16 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>رام | فروشگاه نمایشی</title>
+  <title>مدیریت کاربران | رام</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="container">
-    <h1>فروشگاه رام</h1>
+    <h1>رام</h1>
     <nav>
-      <a href="index.html" class="active">خانه</a>
+      <a href="index.html">خانه</a>
       <a href="products.html">محصولات</a>
       <a href="cart.html">سبد خرید <span id="navCartCount" class="badge">0</span></a>
       <a href="orders.html">ارسالی‌ها</a>
@@ -19,16 +19,23 @@
       <a href="profile.html">پروفایل</a>
       <a href="signup.html">ثبت‌نام</a>
       <a href="login.html">ورود</a>
-      <a href="users.html">کاربران</a>
-      <a href="about.html">درباره ما</a>
-      <a href="contact.html">تماس با ما</a>
+      <a href="users.html" class="active">کاربران</a>
     </nav>
   </header>
 
-  <section class="hero container">
-    <h2>به فروشگاه رام خوش آمدید</h2>
-    <p>سایت نمایشی چندصفحه‌ای با سبد خرید، سفارش‌ها، افزودن محصول و پروفایل کاربری.</p>
-    <a href="products.html" class="btn">مشاهده محصولات</a>
+  <section class="container">
+    <h2>لیست کاربران ثبت‌نامی</h2>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>نام</th>
+          <th>ایمیل</th>
+          <th>عملیات</th>
+        </tr>
+      </thead>
+      <tbody id="usersTableBody"></tbody>
+    </table>
+    <p id="usersCount"></p>
   </section>
 
   <footer class="container">

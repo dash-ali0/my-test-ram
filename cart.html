@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>سبد خرید | رام</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="container">
+    <h1>رام</h1>
+    <nav>
+      <a href="index.html">خانه</a>
+      <a href="products.html">محصولات</a>
+      <a href="cart.html" class="active">سبد خرید <span id="navCartCount" class="badge">0</span></a>
+      <a href="orders.html">ارسالی‌ها</a>
+      <a href="profile.html">پروفایل</a>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h2>سبد خرید شما</h2>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>محصول</th>
+          <th>تعداد</th>
+          <th>قیمت واحد</th>
+          <th>جمع</th>
+          <th>عملیات</th>
+        </tr>
+      </thead>
+      <tbody id="cartTableBody"></tbody>
+    </table>
+    <div class="cart-summary">
+      <p id="totalPrice">جمع کل: 0 تومان</p>
+      <div class="cart-actions">
+        <a href="products.html" class="btn">ادامه خرید</a>
+        <button class="btn danger" onclick="clearCart()">خالی کردن سبد</button>
+        <button class="btn" onclick="checkout()">خرید نهایی</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <p>© 2025 فروشگاه رام</p>
+  </footer>
+</body>
+</html>

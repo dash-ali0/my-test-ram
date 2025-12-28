@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>محصولات | رام</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="container">
+    <h1>رام</h1>
+    <nav>
+      <a href="index.html">خانه</a>
+      <a href="products.html" class="active">محصولات</a>
+      <a href="cart.html">سبد خرید <span id="navCartCount" class="badge">0</span></a>
+      <a href="orders.html">ارسالی‌ها</a>
+      <a href="add-product.html">افزودن محصول</a>
+      <a href="profile.html">پروفایل</a>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h2>لیست محصولات</h2>
+    <div class="filters">
+      <input id="searchInput" type="text" placeholder="جستجوی محصول..." oninput="filterProducts()">
+      <select id="priceFilter" onchange="filterProducts()">
+        <option value="">همه قیمت‌ها</option>
+        <option value="low">زیر 300,000</option>
+        <option value="mid">300,000 تا 600,000</option>
+        <option value="high">بالای 600,000</option>
+      </select>
+    </div>
+    <div id="productsGrid" class="products"></div>
+  </section>
+
+  <footer class="container">
+    <p>© 2025 فروشگاه رام</p>
+  </footer>
+</body>
+</html>
